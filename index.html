@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphys with AJAX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Arial|Bitter:700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="jumbotron text-center">
+				<h1 class="header">
+					<strong>
+						<i class="fa fa-list"></i>
+						Giphy
+					</strong>
+				</h1>
+			</div>			
+		</div>
+	</header>
+	<section id="myButtons" class="container">
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3><strong>My Gif Buttons</strong></h3>
+				</div>
+				<div class="panel-default">
+					<div id="buttons">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<section id="gifSection" class="panel-default col-lg-8 col-md-8 col-sm-8 col-xs-6">
+				<div id="gif">
+					<img src="assets/images/1-giphy.jpg" alt="giphy" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				</div>
+			</section>
+			<aside id="addButtonAside" class="panel-default col-lg-4 col-md-4 col-sm-4 col-xs-6">
+				<div  class="addButton">
+					<h4><strong>Add a Gif</strong></h4>
+					<form>
+						<input id="newElement" type="text" name="animal" value="">
+						<br>
+						<button id="addButton" class="btn btn-success"><strong> Submit</strong></button>
+					</form>
+				</div>
+			</aside>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script src="assets/javascript/app.js"></script>
+</body>
+</html>
