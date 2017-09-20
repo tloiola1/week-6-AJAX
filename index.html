@@ -3,14 +3,13 @@
 <head>
 	<title>Giphys with AJAX</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Arial|Bitter:700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arial|Bitter:700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header class="container">
@@ -18,8 +17,8 @@
 			<div class="jumbotron text-center">
 				<h1 class="header">
 					<strong>
-						<i class="fa fa-list"></i>
-						Giphy
+						<i class="fa fa"></i>
+						Giphy Genarator
 					</strong>
 				</h1>
 			</div>			
@@ -40,18 +39,21 @@
 	</section>
 	<div class="container">
 		<div class="row">
-			<section id="gifSection" class="panel-default col-lg-8 col-md-8 col-sm-8 col-xs-6">
-				<div id="gif">
-					<img src="assets/images/1-giphy.jpg" alt="giphy" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<section id="gifSection" class="panel-default col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<div class="row">
+					<div id="gif">
+					</div>
 				</div>
 			</section>
-			<aside id="addButtonAside" class="panel-default col-lg-4 col-md-4 col-sm-4 col-xs-6">
+			<aside id="addButtonAside" class="panel-default col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<div  class="addButton">
-					<h4><strong>Add a Gif</strong></h4>
+					<h4><strong>Add a Gif Button</strong></h4>
 					<form>
 						<input id="newElement" type="text" name="animal" value="">
 						<br>
-						<button id="addButton" class="btn btn-success"><strong> Submit</strong></button>
+						<button id="addButton" class="btn btn-success">
+								Submit
+						</button>
 					</form>
 				</div>
 			</aside>
@@ -59,14 +61,7 @@
 	</div>
 
 
-
-
-
-
-
-
-
-
+	<script src="assets/javascript/config.js"></script>
 	<script src="assets/javascript/app.js"></script>
 </body>
 </html>
