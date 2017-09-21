@@ -51,6 +51,8 @@
 				gifImage.attr("data-animate", imageUrl_animate);
 	        	gifImage.attr("alt", "Gif Image");
 	        	gifImage.attr("data-state", "still");
+	        	gifImage.attr("data-toggle","tooltip");
+	        	gifImage.attr("title", "Play Me");
 	        	gifImage.addClass("gifPlay");
 	        	gifImage.addClass("well");
 	        	//Appending Gifs To The Browser
@@ -67,6 +69,7 @@
 		for (var i = 0; i < arrayButtons.length; i++) {
 			var gifButton = $("<button>");
 			gifButton.addClass("btn btn-success gifMovie");
+			gifButton.attr("id","gifMovie"+i);
 			gifButton.attr("data-name",arrayButtons[i]);
 			gifButton.text(arrayButtons[i]);
 			//Appending The Button To The Browser Into A Div With ID buttons
@@ -84,7 +87,13 @@
 		// This Variable Gets A Location From Array -1 Do Not Exist >-1 Exist
 		var test = arrayButtons.indexOf(element);
 		//This Condition Prevents Duplicated Buttons In The Browser >-1 
-		if(test > -1){createButton = false;}
+		if(test > -1){createButton = false;
+			//Alert The User For Existing Button
+			for(var i = 0; i < 4; i++){
+				$("#gifMovie"+test).fadeOut(100);
+				$("#gifMovie"+test).fadeIn(100);
+			}
+		}
 		//This Condition Test For Empty Input Or A Button With Same Valeu
 		if(element==="" || createButton === false){
 			// Clear Input Box
@@ -112,11 +121,13 @@
 			//Changing The src From A still gif To A animeted gif
 			$(this).attr("src", $(this).attr("data-animate"));
 			$(this).attr("data-state", "animate");
+			$(this).attr("title", "Pause Me");
 		}
 		//If The State Is animate Then Stop By Changing Its src To A still state
 		else{
 			$(this).attr("src", $(this).attr("data-still"));
 			$(this).attr("data-state", "still");
+			$(this).attr("title", "Play Me");
 		}
 
 	});
