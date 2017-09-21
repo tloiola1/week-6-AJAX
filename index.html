@@ -10,53 +10,54 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	img{
+		width: 31%;
+		padding: 20px;
+	}
+	.newClass{
+		background-color: #20315A !important;
+	}
+	.panel-primary{
+		border-color: #20315A;
+	}
+	</style>
+
 </head>
 <body>
-	<header class="container">
-		<div class="row">
-			<div class="jumbotron text-center">
-				<h1 class="header">
-					<strong>
-						<i class="fa fa"></i>
-						Giphy Genarator
-					</strong>
-				</h1>
-			</div>			
-		</div>
-	</header>
+	
 	<section id="myButtons" class="container">
 		<div class="row">
 			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3><strong>My Gif Buttons</strong></h3>
-				</div>
-				<div class="panel-default">
-					<div id="buttons">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="container">
-		<div class="row">
-			<section id="gifSection" class="panel-default col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				<div class="row">
-					<div id="gif">
-					</div>
-				</div>
-			</section>
-			<aside id="addButtonAside" class="panel-default col-lg-4 col-md-4 col-sm-4 col-xs-4">
-				<div  class="addButton">
+				<div class="panel-heading newClass">
+					<h1 class=""><strong>Gif Generator</strong></h1>
+					<br>
 					<h4><strong>Add a Gif Button</strong></h4>
 					<form>
-						<input id="newElement" type="text" name="animal" value="">
+						<input id="newElement" type="text" name="animal" value="" style="color:black">
 						<br>
 						<button id="addButton" class="btn btn-success">
 								Submit
 						</button>
 					</form>
 				</div>
-			</aside>
+				<div class="panel-default">
+					<h3 style="margin-top: 0"><strong style="color:#20315A">My Gif Buttons</strong></h3>
+					<div id="buttons">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<section id="gifSection" class="panel-default col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="row">
+					<div id="gif">
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 
