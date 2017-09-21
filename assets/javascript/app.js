@@ -1,7 +1,7 @@
 		
 		var createButton = true;
 		var arrayButtons = ["cat", "dog", "squirrel"];
-		var apikey = config.mySecretKey;
+		var apikey = "cb22a3ba10b7457ba0fd5c446850c598";
 		var responseQuantity = 10;
 		var array = [];
 		var x, y, j;
