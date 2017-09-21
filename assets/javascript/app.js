@@ -1,7 +1,7 @@
 		
 		var createButton = true;
 		var arrayButtons = ["cat", "dog", "squirrel"];
-		var apikey = config.mySecretKey;
+		var apikey = "cb22a3ba10b7457ba0fd5c446850c598";
 		var responseQuantity = 10;
 		var array = [];
 		var x, y, j;
@@ -28,7 +28,7 @@
 		//This Variable Is Getting Scoped Value Of A Button That Was Clicked By The User In The Browser
 		var gifElement = $(this).attr("data-name");
 		// This Variable Gets The Query Of 100 Elements To Be Used In Ajax To Get A Response
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifElement + 
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifElement + 
 		"&apikey="+ apikey +"&limit=100";
 		// Ajax Call to Seach For The Gif User Has Chosen 
 		$.ajax({
